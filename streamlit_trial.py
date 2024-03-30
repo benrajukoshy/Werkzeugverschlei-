@@ -3,14 +3,50 @@ import pickle
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
+# loading the necessary libraries
+import numpy as np
+import os
+import random
+#import cv2
+import PIL.Image as Image
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from tensorflow import keras
+import tensorflow_hub as hub
+from keras.utils import to_categorical
+#from google.colab.patches import cv2_imshow
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array, array_to_img
+from sklearn.model_selection import train_test_split
+
+# Load and preprocess the data
+import pandas as pd
+import random
+from urllib.request import urlopen, urlretrieve
+from PIL import Image
+#from tqdm import tqdm_notebook
+from sklearn.utils import shuffle
+#import cv2
+from sklearn.metrics import precision_recall_curve
+
+# Import the pre-trained models
+from tensorflow.keras.applications import ResNet50, MobileNetV2
+
+# Define callbacks and training parameters
+from keras.callbacks import TensorBoard, ReduceLROnPlateau, ModelCheckpoint
+
+# Build the model
+from keras.models import Sequential, Model, load_model
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D,GlobalAveragePooling2D
+
 # Funktion zum Laden des Skalierers aus der Pickle-Datei
-def load_scaler(filename):
-    with open(filename, 'rb') as file:
-        scaler = pickle.load(file)
-    return scaler
+# def load_scaler(filename):
+#     with open(filename, 'rb') as file:
+#         scaler = pickle.load(file)
+    # return scaler
 
 # Laden des trainierten Modells
-filename = 'finalized_model.sav'
+filename = '/workspaces/Werkzeugverschlei-/mobilenet_v2_version1.sav'
 model = pickle.load(open(filename, 'rb'))
 
 # Laden der Skalierer
