@@ -46,7 +46,7 @@ from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D,GlobalAverag
     # return scaler
 print(tf.__version__)
 # Laden des trainierten Modells
-filename = '/workspaces/Werkzeugverschlei-/mobilenet_v2_version1.keras'
+filename = '/workspaces/Werkzeugverschlei-/mobilenet_v2_version1 (1).keras'
 model = keras.models.load_model(filename)
 
 # Laden der Skalierer
