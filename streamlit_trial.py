@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-from sklearn.preprocessing import MinMaxScaler
+#from sklearn.preprocessing import MinMaxScaler
 import tensorflow as tf
 
 # Funktion zum Laden des Skalierers aus der Pickle-Datei
