@@ -29,8 +29,8 @@ else:
     
 
 st.subheader("Klassifikation von Daten nach dem ResNet50-Modell mit und ohne Data Augmentation")
-st.button("No Data Augmentation", type="primary")
-if st.button('Data Augmentation'):
+st.button("No Data Augmentation", type="primary", key = 'resnet')
+if st.button('Data Augmentation',key = 'resnet_augment'):
     st.write('Why hello there')
 else:
     Plot_Accuracy_RestNet50_Ohne_Augmentation = 'Plot_Accuracy_RestNet50_Ohne_Augmentation.png'
