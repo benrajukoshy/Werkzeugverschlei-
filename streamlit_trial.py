@@ -33,7 +33,7 @@ else:
     
 
 st.subheader("Klassifikation von Daten nach dem ResNet50-Modell mit und ohne Data Augmentation")
-option = st.st_btn_select(('option1', 'option2', 'option3', 'option4'), index=2)
+option = st.selectbox( 'Do you want augmentation',['Yes','No'])
 st.write(option)
 st.button("No Data Augmentation", type="primary", key = 'resnet')
 if st.button('Data Augmentation',key = 'resnet_augment'):
