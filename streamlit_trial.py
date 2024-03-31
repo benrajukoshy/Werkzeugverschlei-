@@ -11,9 +11,13 @@ st.header("Automatisierte Erkennung und Dokumentation von Werkzeugverschleiß zu
 st.subheader("Klassifikation von Daten nach dem MobilNetV2-Modell mit und ohne Data Augmentation")
 st.button("No Data Augmentation", type="primary")
 if st.button('Data Augmentation'):
-    st.write('Why hello there')
-    filename = "afro-guitar-colorful-music-sunglasses-digital-art-4k-wallpaper-uhdpaper.com-222@1@n.jpg"
-    st.image(filename, caption='Sunrise by the mountains')  
+    Plot_Accuracy_MobilNetV2_Mit_Augmentation ='Plot_Accuracy_MobilNetV2_Mit_Augmentation.png'
+    Plot_des_Modellverlustes_MobilNetV2_Mit_Augmentation = 'Plot_des_Modellverlustes_MobilNetV2_Mit_Augmentation.png'
+    Konfusion_Matrix_MobilNetV2_Mit_Augmentation = 'Konfusion_Matrix_MobilNetV2_Mit_Augmentation.png'
+
+    st.image(Plot_Accuracy_MobilNetV2_Mit_Augmentation, caption='Plot_Accuracy_MobilNetV2_Mit_Augmentation')  
+    st.image(Plot_des_Modellverlustes_MobilNetV2_Mit_Augmentation, caption = 'Plot_des_Modellverlustes_MobilNetV2_Mit_Augmentation')
+    st.image(Konfusion_Matrix_MobilNetV2_Mit_Augmentation, caption = 'Konfusion_Matrix_MobilNetV2_Mit_Augmentation')
 else:
 
     Plot_Accuracy_MobilNetV2_Ohne_Augmentation = "Plot_Accuracy_MobilNetV2_Ohne_Augmentation.png"
@@ -39,4 +43,4 @@ else:
 
     st.image(Plot_Accuracy_RestNet50_Ohne_Augmentation, caption = 'Plot_Accuracy_ResNet50_Ohne_Augmentation')
     st.image(Plot_des_Modellverlustes_RestNet50_Ohne_Augmentation, caption = 'Plot_des_Modellverlustes_RestNe50_Ohne_Augmentation')
-    st.image(Konfusion_Matrix_RestNet50_Ohne_Augmentation, caption = 'Konfusion_Matrix_ResNet50_Ohne_Augmentation.png')
+    st.image(Konfusion_Matrix_RestNet50_Ohne_Augmentation, caption = 'Konfusion_Matrix_ResNet50_Ohne_Augmentation')
