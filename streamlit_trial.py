@@ -19,7 +19,9 @@ else:
     Plot_Accuracy_MobilNetV2_Ohne_Augmentation = "Plot_Accuracy_MobilNetV2_Ohne_Augmentation.png"
     Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation = "Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation.png"
     Modellvorhersage_und_Label_Vergleich_MobilNetV2_Ohne_Augmentation = "Modellvorhersage und Label-Vergleich_MobilNetV2_Ohne_Augmentation.png"
+    Konfusion_Matrix_MobilNetV2_Ohne_Augmentation = "Konfusion_Matrix_MobilNetV2_Ohne_Augmentation.png"
     st.image(Plot_Accuracy_MobilNetV2_Ohne_Augmentation, caption='Plot_Accuracy_MobilNetV2_Ohne_Augmentation')
     st.image(Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation, caption = 'Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation')
-    st.image(Modellvorhersage_und_Label_Vergleich_MobilNetV2_Ohne_Augmentation,caption= 'Modellvorhersage und Label-Vergleich_MobilNetV2_Ohne_Augmentation')
+    #st.image(Modellvorhersage_und_Label_Vergleich_MobilNetV2_Ohne_Augmentation,caption= 'Modellvorhersage und Label-Vergleich_MobilNetV2_Ohne_Augmentation')
+    st.image(Konfusion_Matrix_MobilNetV2_Ohne_Augmentation,caption = 'Konfusion_Matrix_MobilNetV2_Ohne_Augmentation')
 
