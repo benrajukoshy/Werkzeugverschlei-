@@ -33,6 +33,8 @@ else:
     
 
 st.subheader("Klassifikation von Daten nach dem ResNet50-Modell mit und ohne Data Augmentation")
+option = st.st_btn_select(('option1', 'option2', 'option3', 'option4'), index=2)
+st.write(option)
 st.button("No Data Augmentation", type="primary", key = 'resnet')
 if st.button('Data Augmentation',key = 'resnet_augment'):
     Plot_Accuracy_RestNet50_Mit_Augmentation = 'Plot_Accuracy_RestNet50_Mit_Augmentation.png'
@@ -51,3 +53,4 @@ else:
     st.image(Plot_Accuracy_RestNet50_Ohne_Augmentation, caption = 'Plot_Accuracy_ResNet50_Ohne_Augmentation')
     st.image(Plot_des_Modellverlustes_RestNet50_Ohne_Augmentation, caption = 'Plot_des_Modellverlustes_RestNe50_Ohne_Augmentation')
     st.image(Konfusion_Matrix_RestNet50_Ohne_Augmentation, caption = 'Konfusion_Matrix_ResNet50_Ohne_Augmentation')
+
