@@ -16,5 +16,9 @@ if st.button('Data Augmentation'):
     st.image(filename, caption='Sunrise by the mountains')  
 else:
 
-    filename = "Plot_Accuracy_MobilNetV2_Ohne_Augmentation.png"
-    st.image(filename, caption='Plot_Accuracy_MobilNetV2_Ohne_Augmentation')
+    Plot_Accuracy_MobilNetV2_Ohne_Augmentation = "Plot_Accuracy_MobilNetV2_Ohne_Augmentation.png"
+    Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation = "Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation.png"
+    
+    st.image(Plot_Accuracy_MobilNetV2_Ohne_Augmentation, caption='Plot_Accuracy_MobilNetV2_Ohne_Augmentation')
+    st.image(Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation, caption = 'Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation')
+
