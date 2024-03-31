@@ -3,12 +3,12 @@ import pickle
 import numpy as np
 
 
-st.title("Regressionsübung im ML Seminar, WS23/24")
-st.header("Prognose der Betonfestigkeit")
+st.title("Seminararbeit Praktische Einführung in Machine Learning")
+st.header("Automatisierte Erkennung und Dokumentation von Werkzeugverschleiß zur Abschätzung der Standzeiten von Werkzeugen")
 
     # Abschnitt für SelectSlider-Elemente
 
-st.header("Wählen Sie die Mengen Ihrer Betoninhaltsstoffe aus")
+st.header("Klassifikation von Daten nach dem MobilNetV2-Modell mit und ohne Data Augmentation")
 st.button("No Data Augmentation", type="primary")
 if st.button('Data Augmentation'):
     st.write('Why hello there')
