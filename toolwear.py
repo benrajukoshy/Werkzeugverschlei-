@@ -59,6 +59,8 @@ from keras.models import Sequential, Model, load_model
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D,GlobalAveragePooling2D
 
+pip install opencv-python
+
 
 # In[3]:
 
