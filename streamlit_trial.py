@@ -8,7 +8,7 @@ st.header("Automatisierte Erkennung und Dokumentation von Werkzeugverschleiß zu
 
     # Abschnitt für SelectSlider-Elemente
 
-st.header("Klassifikation von Daten nach dem MobilNetV2-Modell mit und ohne Data Augmentation")
+st.subheader("Klassifikation von Daten nach dem MobilNetV2-Modell mit und ohne Data Augmentation")
 st.button("No Data Augmentation", type="primary")
 if st.button('Data Augmentation'):
     st.write('Why hello there')
@@ -18,7 +18,7 @@ else:
 
     Plot_Accuracy_MobilNetV2_Ohne_Augmentation = "Plot_Accuracy_MobilNetV2_Ohne_Augmentation.png"
     Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation = "Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation.png"
-    
+
     st.image(Plot_Accuracy_MobilNetV2_Ohne_Augmentation, caption='Plot_Accuracy_MobilNetV2_Ohne_Augmentation')
     st.image(Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation, caption = 'Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation')
 
