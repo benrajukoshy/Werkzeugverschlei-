@@ -9,8 +9,9 @@ st.header("Automatisierte Erkennung und Dokumentation von Werkzeugverschleiß zu
     # Abschnitt für SelectSlider-Elemente
 
 st.subheader("Klassifikation von Daten nach dem MobilNetV2-Modell mit und ohne Data Augmentation")
-st.button("No Data Augmentation", type="primary")
-if st.button('Data Augmentation'):
+option = st.selectbox( 'Do you want augmentation',['Yes','No'])
+
+if option == 'Yes':
     Plot_Accuracy_MobilNetV2_Mit_Augmentation ='Plot_Accuracy_MobilNetV2_Mit_Augmentation.png'
     Plot_des_Modellverlustes_MobilNetV2_Mit_Augmentation = 'Plot_des_Modellverlustes_MobilNetV2_Mit_Augmentation.png'
     Konfusion_Matrix_MobilNetV2_Mit_Augmentation = 'Konfusion_Matrix_MobilNetV2_Mit_Augmentation.png'
@@ -33,10 +34,9 @@ else:
     
 
 st.subheader("Klassifikation von Daten nach dem ResNet50-Modell mit und ohne Data Augmentation")
-option = st.selectbox( 'Do you want augmentation',['Yes','No'])
+option = st.selectbox( 'Do you want augmentation',['Yes','No'],key = 'select2')
 st.write(option)
-st.button("No Data Augmentation", type="primary", key = 'resnet')
-if st.button('Data Augmentation',key = 'resnet_augment'):
+if option == 'Yes':
     Plot_Accuracy_RestNet50_Mit_Augmentation = 'Plot_Accuracy_RestNet50_Mit_Augmentation.png'
     Plot_des_Modellverlustes_RestNet50_Mit_Augmentation = 'Plot_des_Modellverlustes_RestNet50_Mit_Augmentation.png'
     Konfusion_Matrix_RestNet50_Mit_Augmentation = 'Konfusion_Matrix_RestNet50_Mit_Augmentation.png'
