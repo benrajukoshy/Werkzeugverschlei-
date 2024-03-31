@@ -20,8 +20,23 @@ else:
     Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation = "Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation.png"
     Modellvorhersage_und_Label_Vergleich_MobilNetV2_Ohne_Augmentation = "Modellvorhersage und Label-Vergleich_MobilNetV2_Ohne_Augmentation.png"
     Konfusion_Matrix_MobilNetV2_Ohne_Augmentation = "Konfusion_Matrix_MobilNetV2_Ohne_Augmentation.png"
+
+
     st.image(Plot_Accuracy_MobilNetV2_Ohne_Augmentation, caption='Plot_Accuracy_MobilNetV2_Ohne_Augmentation')
     st.image(Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation, caption = 'Plot_des_Modellverlustes_MobilNetV2_Ohne_Augmentation')
     #st.image(Modellvorhersage_und_Label_Vergleich_MobilNetV2_Ohne_Augmentation,caption= 'Modellvorhersage und Label-Vergleich_MobilNetV2_Ohne_Augmentation')
     st.image(Konfusion_Matrix_MobilNetV2_Ohne_Augmentation,caption = 'Konfusion_Matrix_MobilNetV2_Ohne_Augmentation')
+    
 
+st.subheader("Klassifikation von Daten nach dem ResNet50-Modell mit und ohne Data Augmentation")
+st.button("No Data Augmentation", type="primary")
+if st.button('Data Augmentation'):
+    st.write('Why hello there')
+else:
+    Plot_Accuracy_RestNet50_Ohne_Augmentation = 'Plot_Accuracy_RestNet50_Ohne_Augmentation.png'
+    Plot_des_Modellverlustes_RestNet50_Ohne_Augmentation = 'Plot_des_Modellverlustes_RestNet50_Ohne_Augmentation.png'
+    Konfusion_Matrix_RestNet50_Ohne_Augmentation = 'Konfusion_Matrix_RestNet50_Ohne_Augmentation.png'
+
+    st.image(Plot_Accuracy_RestNet50_Ohne_Augmentation, caption = 'Plot_Accuracy_ResNet50_Ohne_Augmentation')
+    st.image(Plot_des_Modellverlustes_RestNet50_Ohne_Augmentation, caption = 'Plot_des_Modellverlustes_RestNe50_Ohne_Augmentation')
+    st.image(Konfusion_Matrix_RestNet50_Ohne_Augmentation, caption = 'Konfusion_Matrix_ResNet50_Ohne_Augmentation.png')
